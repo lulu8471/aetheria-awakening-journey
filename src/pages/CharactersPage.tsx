@@ -61,4 +61,5 @@ export default function CharactersPage() {
         </div>
       </div>
     </div>
+  );
 }
