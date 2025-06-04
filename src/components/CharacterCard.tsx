@@ -17,4 +17,5 @@ export default function CharacterCard({ character }: CharacterCardProps) {
         <p className="char-appearance">{character.appearance}</p>
       </div>
     </div>
+  );
 }
