@@ -56,7 +56,8 @@ export default function CalendarInteractive({ months, onSelect }: CalendarIntera
           cy={centerY}
           r={radiusInner - 20}
           fill="rgba(30, 30, 80, 0.8)"
-        />
-      </svg>
-    </div>
+      />
+    </svg>
+  </div>
+  );
 }
