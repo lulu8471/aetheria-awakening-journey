@@ -28,4 +28,5 @@ export default function TimelineInteractive({ events, onSelect }: TimelineIntera
         </div>
       ))}
     </div>
+  );
 }
