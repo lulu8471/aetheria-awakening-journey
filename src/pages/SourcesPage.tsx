@@ -24,4 +24,5 @@ export default function SourcesPage() {
         </li>
       </ul>
     </div>
+  );
 }
