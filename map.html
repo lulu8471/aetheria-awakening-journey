@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="zh-Hant"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>覺醒之旅 - 互動地圖</title><link rel="stylesheet" href="css/style.css"><script defer src="js/main.js"></script></head>
+<body><header><div class="logo"><a href="index.html">覺醒之旅</a></div><nav><ul><li><a href="index.html">首頁</a></li><li><a href="nations.html">七大國</a></li><li><a href="map.html" class="active">互動地圖</a></li><li><a href="history.html">大陸歷史</a></li><li><a href="characters.html">角色資料庫</a></li><li><a href="sources.html">引用來源</a></li></ul></nav></header>
+<div class="container"><h1>互動式世界地圖</h1><p>點擊色塊顯示對應國家摘要。</p>
+<div id="mapWrapper">
+<svg viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="40" width="160" height="120" fill="url(#gradStarshine)" class="region" data-target="info-stellaria" rx="12" ry="12"/><image href="images/Stellaria empire badge.png" x="80.0" y="70.0" width="60" height="60" pointer-events="none"/>
+<rect x="220" y="40" width="160" height="120" fill="url(#gradMoon)" class="region" data-target="info-lunaris" rx="12" ry="12"/><image href="images/Lunaris kingdom badge.png" x="270.0" y="70.0" width="60" height="60" pointer-events="none"/>
+<rect x="410" y="40" width="160" height="120" fill="url(#gradSky)" class="region" data-target="info-celestial" rx="12" ry="12"/><image href="images/Celestial federation badge.png" x="460.0" y="70.0" width="60" height="60" pointer-events="none"/>
+<rect x="30" y="200" width="160" height="120" fill="url(#gradArcane)" class="region" data-target="info-arcane" rx="12" ry="12"/><image href="images/Arcane Republic badge.png" x="80.0" y="230.0" width="60" height="60" pointer-events="none"/>
+<rect x="220" y="200" width="160" height="120" fill="url(#gradFrost)" class="region" data-target="info-frostpeak" rx="12" ry="12"/><image href="images/Frostpeak kingdom badge.png" x="270.0" y="230.0" width="60" height="60" pointer-events="none"/>
+<rect x="410" y="200" width="160" height="120" fill="url(#gradDesert)" class="region" data-target="info-desert" rx="12" ry="12"/><image href="images/Desert alliance badge.png" x="460.0" y="230.0" width="60" height="60" pointer-events="none"/>
+<rect x="600" y="120" width="60" height="160" fill="url(#gradShadow)" class="region" data-target="info-shade" rx="12" ry="12"/><image href="images/Shade territories badge.png" x="600" y="150.0" width="60" height="60" pointer-events="none"/>
+<defs>
+<linearGradient id="gradStarshine" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#6a89cc"/><stop offset="100%" stop-color="#4a69bd"/></linearGradient>
+<linearGradient id="gradMoon" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#8e44ad"/><stop offset="100%" stop-color="#6c3483"/></linearGradient>
+<linearGradient id="gradSky" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#00cec9"/><stop offset="100%" stop-color="#0984e3"/></linearGradient>
+<linearGradient id="gradArcane" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#e58e26"/><stop offset="100%" stop-color="#d35400"/></linearGradient>
+<linearGradient id="gradFrost" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#2d3436"/><stop offset="100%" stop-color="#636e72"/></linearGradient>
+<linearGradient id="gradDesert" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#f8c291"/><stop offset="100%" stop-color="#e17055"/></linearGradient>
+<linearGradient id="gradShadow" x1="0" x2="1" y1="0" y2="1"><stop offset="0%" stop-color="#636e72"/><stop offset="100%" stop-color="#2d3436"/></linearGradient>
+</defs>
+</svg>
+<div id="regionInfo"></div></div><div id="info-stellaria" style="display:none;"><h2>星耀帝國 Stellaria Empire</h2><p>龐大而繁華的魔導帝國，以璀璨科技與嚴謹軍事體系立國，首都星耀城是全球最大的貿易與學術中心。</p></div><div id="info-lunaris" style="display:none;"><h2>月影王國 Lunaris Kingdom</h2><p>位於永夜深林的神祕王國，皎潔月光為其魔法來源，王族擅長影月法術與幻影作戰。</p></div><div id="info-celestial" style="display:none;"><h2>天星聯邦 Celestial Federation</h2><p>由漂浮城邦結盟而成，掌握天空航道與星際觀測，飛艇與占星術領先全球。</p></div><div id="info-arcane" style="display:none;"><h2>奧術共和國 Arcane Republic</h2><p>賢者議會治領的自由魔法共和國，推崇知識共享與奧術創新，遍佈高塔與藏書館。</p></div><div id="info-frostpeak" style="display:none;"><h2>霜峰王國 Frostpeak Kingdom</h2><p>屹立於冰封高山的堅毅王國，以矮人鍛造與寒鋼礦脈聞名。</p></div><div id="info-desert" style="display:none;"><h2>沙漠聯盟 Desert Alliance</h2><p>由遊牧部族組成的自由聯盟，掌控貿易綠洲與灼熱港，黃金沙脈下蘊藏遠古遺跡。</p></div><div id="info-shade" style="display:none;"><h2>陰影領域 Shade Territories</h2><p>邊陲霧瘴覆蓋的未知地帶，暗影生物與墮落巫師潛藏。</p></div>
+
+<div class="map-container" style="margin-top:30px;">
+    <img src="images/map-main.png" alt="World Map" style="width:100%;border-radius:12px;">
+    <div class="map-marker" data-target="info-lunaris" style="left:20%;top:20%;"></div>
+    <div class="map-marker" data-target="info-stellaria" style="left:50%;top:30%;"></div>
+    <div class="map-marker" data-target="info-frostpeak" style="left:80%;top:20%;"></div>
+    <div class="map-marker" data-target="info-arcane" style="left:80%;top:45%;"></div>
+    <div class="map-marker" data-target="info-desert" style="left:25%;top:55%;"></div>
+    <div class="map-marker" data-target="info-celestial" style="left:50%;top:75%;"></div>
+    <div class="map-marker" data-target="info-shade" style="left:80%;top:70%;"></div>
+</div>
+</div><footer>© 2025 覺醒之旅 — Aetheria Awakening Journey. All rights reserved.</footer></body></html>
